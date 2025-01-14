@@ -10,74 +10,70 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
-
 <body>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg  fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Jennifer Nguyen</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="flex-sm-fill text-sm-center nav-link" href="#home">About Me</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#projects">Projects</a>
+        <a href="resume.pdf" class="flex-sm-fill text-sm-center nav-link fw-bold" target="_blank">Resume</a>
+        <div class="slider" onclick="changeTheme()"></div>
     </nav>
 
-<!-- Hero Section -->
-<section class="hero-section text-center" id="home">
-    <!-- Outer Wrapper with Background -->
-    <div class="hero-section text-center">
+    <!-- Intro Section -->
+    <section class="intro-section text-center" id="home" style="position: relative;">
         <div class="container">
-            <h1 class="display-4 fw-bold mb-3">Jennifer Nguyen</h1>
-            <p class="lead mb-4">Software Engineer Intern | Front-end Developer Intern</p>
-            <a href="#contact" class="btn btn-primary btn-lg">Get In Touch</a>
-        </div>
-    </div>
-</section>
+            <div class="row align-items-center">
+                <!-- Contact Section (Left) -->
+                <div class="col-lg-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="https://github.com/Jennygit03" class="social-icon mb-3" target="_blank">
+                            <i class="bi bi-github" style="font-size: 2rem;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jennifer-nguyen-1b7a19201/" class="social-icon mb-3" target="_blank">
+                            <i class="bi bi-linkedin" style="font-size: 2rem;"></i>
+                        </a>
+                        <a href="mailto:jennifertn@outlook.com" class="social-icon mb-3">
+                            <i class="bi bi-envelope" style="font-size: 2rem;"></i>
+                        </a>
+                    </div>
+                </div>
 
+                <!-- Text Content (Right) -->
+                <div class="col-md-10 content-overlay">
+                    <h1 class="display-2 fw-bold mb-3">Jennifer Nguyen</h1>
+                    <p class="lead mb-4">Software Engineer Intern | Front-end Developer Intern</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
-    <section class="py-5" id="about">
+    <section class="about py-2" id="about">
         <div class="container">
             <h2 class="text-center mb-5">About Me</h2>
-
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                  <p class="lead text-muted">
-                                Hi there! <img src="hi.jpg" alt="Anime Girl" class="anime-girl"> </p>
-                                <p>
-                                I am a senior student at Middle Tennessee State University. Capable of programming in various languages,
-                                including C++, HTML, and CSS, with practical experience in front-end development
-                                gained through academic projects and personal endeavors. Eager to leverage 
-                                technical skills and continuous learning to contribute to dynamic development
-                                teams and drive impactful projects.
-                     </p>
+                    <p><h4>
+                        Hi, My name is Jennifer Nguyen <span style='font-size:auto;'>&#128075;</span>
+                        <h5>
+                        I am a senior student at Middle Tennessee State University. Capable of programming in various languages,
+                        including C++, HTML, and CSS, with practical experience in front-end development
+                        gained through academic projects and personal endeavors. Eager to leverage 
+                        technical skills and continuous learning to contribute to dynamic development
+                        teams and drive impactful projects. </h5>
+                    </h4></p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="py-5 bg-light" id="skills">
+    <section class="py-4" id="skills">
         <div class="container">
             <h2 class="text-center mb-5">Technical Skills</h2>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-8 col-lg-6">
                     <div class="card h-100 border-0 shadow-sm skill-card">
                         <div class="card-body">
                             <div class="text-center mb-3">
@@ -89,7 +85,7 @@
                     </div>
                 </div>
              
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-8 col-lg-6">
                     <div class="card h-100 border-0 shadow-sm skill-card">
                         <div class="card-body">
                             <div class="text-center mb-3">
@@ -100,78 +96,49 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm skill-card">
-                        <div class="card-body">
-                            <div class="text-center mb-3">
-                                <i class="bi bi-database text-primary" style="font-size: 2rem;"></i>
-                            </div>
-                            <h5 class="card-title text-center">Databases</h5>
-                            <p class="card-text text-center"></p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="py-5" id="projects">
+    <section class="py-4" id="projects">
         <div class="container">
             <h2 class="text-center mb-5">Featured Projects</h2>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm project-card">
-                        <img src="" class="card-img-top" alt="Project 1">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card  h-100 border-0 shadow-sm project-card">
+                        <img src="project1-image.jpg" class="card-img-top" alt="Project 1">
                         <div class="card-body">
                             <h5 class="card-title">E-Commerce Platform</h5>
-                            <p class="card-text"></p>
-                            <div class="d-flex gap-2">
+                            <p class="card-text">A web-based e-commerce platform designed to support online transactions, product listings, and a user-friendly interface.</p>
+                            <div class="d-flex gap-2 mt-3">
                                 <a href="#" class="btn btn-primary">View Project</a>
                                 <a href="#" class="btn btn-outline-secondary">GitHub</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-8 col-lg-6">
                     <div class="card border-0 shadow-sm project-card">
-                        <img src="" class="card-img-top" alt="Project 2">
+                        <img src="project2-image.jpg" class="card-img-top" alt="Project 2">
                         <div class="card-body">
                             <h5 class="card-title">Task Management App</h5>
-                            <p class="card-text">A collaborative task management tool built with React and Firebase. Includes real-time updates and team collaboration features.</p>
-                            <div class="d-flex gap-2">
+                            <p class="card-text">A task management app that helps users create, track, and complete tasks efficiently, integrated with user authentication.</p>
+                            <div class="d-flex gap-2 mt-3">
                                 <a href="#" class="btn btn-primary">View Project</a>
                                 <a href="#" class="btn btn-outline-secondary">GitHub</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-    </section>
-
-    <!-- Contact Section -->
-<!-- Contact Section -->
-<section class="py-5 bg-light" id="contact">
-    <div class="container">
-        <h2 class="text-center mb-5">Contact Me</h2>
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-4">
-                    <div class="d-flex justify-content-center">
-                        <a href="https://github.com/Jennygit03" class="social-icon" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/jennifer-nguyen-1b7a19201/" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="mailto:jennifertn@outlook.com" class="social-icon"><i class="bi bi-envelope"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="script.js"></script>
+
     <!-- Custom JavaScript for Navbar scroll effect -->
     <script>
         window.addEventListener('scroll', function() {
