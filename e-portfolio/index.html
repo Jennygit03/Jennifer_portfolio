@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jennifer Nguyen - Portfolio </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Add this line inside the <head> tag to include Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand fw-bold">
+                <img src="images/logo.png" alt="Logo" width="80" height="64">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Theme Toggle -->
+            <div class="d-flex align-items-center">
+                <div class="slider">
+                    <label for="checkbox" class="checkbox-label" onclick="changeTheme()">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+
+
+   
+    <section class="hero-section text-center" id="home">
+        <div class="container">
+          <div class="row align-items-center justify-content-center gx-2"> <!-- use gx-2 to reduce horizontal gutter -->
+      
+            <!-- Profile Image -->
+            <div class="col-auto">
+              <img src="images/girl_coding.png" alt="Profile" class="img-fluid rounded-circle" style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+      
+            <!-- Name and Info -->
+            <div class="col-auto text-start">
+              <h1 class="display-5 fw-bold mb-4">Jennifer Nguyen</h1>
+              <p class="lead mb-4">Aspiring Data Analyst | Python & SQL Enthusiast | Turning Data into Insight</p>
+              <a href="#contact" class="btn btn-primary btn-sm me-2">Get In Touch</a>
+              <a href="Jennifer_resume.pdf" target="_blank" class="btn btn-primary btn-sm">Resume</a>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+  
+
+   
+   
+   <!-- About Section -->
+   <section class="py-5" id="about">
+       <div class="container">
+           <h2 class="text-center mb-5">About Me</h2>
+           <div class="row justify-content-center">
+               <div class="col-lg-8">
+                <p class="lead">
+                    Hi there! 👋<br>
+                    I am a senior at Middle Tennessee State University with a passion for turning raw data into actionable insights. 
+                    Proficient in MySQL, C++, HTML, and CSS, with a demonstrated capacity to develop front-end applications that bridge
+                    technical and analytical thinking to facilitate informed decision making through compelling data storytelling.
+                    I am eager to gain hands on experience and solve real world problems through data storytelling and analytics.
+                    </p>
+                    
+               </div>
+           </div>
+       </div>
+   </section>
+   
+   <!-- Tech Skills Section -->
+   <section class="py-5" id="skills">
+       <div class="container">
+           <h2 class="text-center mb-5">Technical Skills</h2>
+           <div class="row">
+
+               <div class="col-md-6">
+                   <div class="card h-100 border-0 shadow-sm skill-card">
+                       <div class="card-body">
+                           <div class="text-center mb-3">
+                               <i class="bi bi-code-slash text-primary" style="font-size: 2rem;"></i>
+                           </div>
+                           <h5 class="card-title text-center">Languages</h5>
+                           <p class="card-text text-center">C++, HTML/CSS, Bootstrap</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="card h-100 border-0 shadow-sm skill-card">
+                       <div class="card-body">
+                           <div class="text-center mb-3">
+                               <i class="bi bi-tools text-primary" style="font-size: 2rem;"></i>
+                           </div>
+                           <h5 class="card-title text-center">Tools & Platforms</h5>
+                           <p class="card-text text-center">GitHub, JupyterHub</p>
+                       </div>
+                   </div>
+               </div>
+               
+           </div>
+       </div>
+   </section>
+   
+   <!-- Projects Section -->
+   <section class="py-5" id="projects">
+       <div class="container">
+           <h2 class="text-center mb-5">Featured Projects</h2>
+           <div class="row g-6">
+
+               <div class="col-md-6 ">
+                   <div class="card border-0 shadow-sm project-card">
+                       <img src="images/ticTacToe_img.png" class="card-img-top" alt="E-Commerce Platform" width="100px" height="200px">
+                       <div class="card-body">
+                           <h5 class="card-title">Tic-Tac-Toe</h5>
+                           <p class="card-text">A C++ console application that lets you play Tic-Tac-Toe against a computer opponent.</p>
+                           <div class="d-flex gap-2">
+                               <a href="https://github.com/Jennygit03/Tic-Tac-Toe" class="btn btn-primary">View Project</a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="col-md-6">
+                   <div class="card border-0 shadow-sm project-card">
+                       <img src="images/budgeting_img.png" class="card-img-top" alt="Personal Budgeting Web">
+                       <div class="card-body">
+                           <h5 class="card-title">Personal Budting Web</h5>
+                           <p class="card-text">A full-stack web application that allow users to tracks income, expenses, bills, and
+                            saving goals.</p>
+                           <div class="d-flex gap-2">
+                               <a href="https://github.com/Jennygit03/budgeting_web" class="btn btn-primary">View Project</a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+   </section>
+   
+   <!-- Contact Section -->
+   <section class="py-5" id="contact">
+       <div class="container">
+           <h2 class="text-center mb-5">Contact Me</h2>
+           <div class="row justify-content-center">
+               <div class="col-lg-2">
+                   <div class="text-center mb-8">
+                       <div class="d-flex justify-content-center">
+                           <a href="https://github.com/Jennygit03" class="social-icon" target="_blank"><i class="bi bi-github"></i></a>
+                           <a href="https://www.linkedin.com/in/jennifer-nguyen-1b7a19201/" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+                           <a href="mailto:jennifertn@outlook.com" class="social-icon"><i class="bi bi-envelope"></i></a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+      <script src="script.js"></script>
+  
+      <script>
+          window.addEventListener('scroll', function() {
+              if (window.scrollY > 50) {
+                  document.querySelector('.navbar').classList.add('scrolled');
+              } else {
+                  document.querySelector('.navbar').classList.remove('scrolled');
+              }
+          });
+  
+         </script>
+  </body>
+  </html>
