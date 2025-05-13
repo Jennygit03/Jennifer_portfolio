@@ -17,174 +17,144 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg  fixed-top">
-        <div class="container">
-<!-- Brand Logo -->
-        <a class="navbar-brand fw-bold">
-            <img src="logo.png" alt="Logo" width="80" height="64">
-        </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav  justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+    <div id="page-wrapper" class="fixed-top">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1 id="logo">
+                <a class="navbar-brand fw-bold">
+                    <img src="logo.png" alt="Logo" width="80" height="64">
+                </a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="index.html">Welcome</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <!-- Theme Mode -->
+                    <li>
+                        <div class="slider">
+                            <label for="checkbox" class="checkbox-label" onclick="changeTheme()">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                            </label>
+                        </div>
                     </li>
                 </ul>
-            </div>
-        <!-- Theme Toggle -->
-        <div class="d-flex align-items-center">
-            <div class="slider">
-                <label for="checkbox" class="checkbox-label" onclick="changeTheme()">
-                    <i class="fas fa-sun"></i>
-                    <i class="fas fa-moon"></i>
-                </label>
-            </div>
+            </nav>
+        </header>
+    </div>
+    
+    <!-- Banner -->
+            <section id="banner">
+                <div class="inner">
+
+                    <header>
+                        <h2>TWENTY</h2>
+                    </header>
+                    <p>This is <strong>Twenty</strong>, a free
+                    <br />
+                    responsive template
+                    <br />
+                    by <a href="http://html5up.net">HTML5 UP</a>.</p>
+
+                </div>
+                </section>
+
+
+<section class="wrapper style3 container special">
+    <div class="row">
+        <div class="col-6 col-12-narrower">
+
+            <section>
+                <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                <header>
+                    <h3>A Really Fast Train</h3>
+                </header>
+                <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+            </section>
+
+        </div>
+        <div class="col-6 col-12-narrower">
+
+            <section>
+                <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                <header>
+                    <h3>An Airport Terminal</h3>
+                </header>
+                <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+            </section>
+
         </div>
     </div>
-</nav>
+    <div class="row">
+        <div class="col-6 col-12-narrower">
 
-
-
-   
-   
-   <!--Intro Section -->
-   <section class="hero-section text-center" id="home" >
-    <img src="">
-       <div class="intro">
-           <h1 class="display-4 fw-bold mb-4">Jennifer Nguyen</h1>
-           <p class="lead mb-4">Software Engineer Intern | Front-end Developer Intern</p>
-           <a href="#contact" class="btn btn-primary btn-lg">Get In Touch</a>
-           <a href="resume.pdf" target="_blank" class="btn btn-primary btn-lg">Resume</a>
+            <section>
+                <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                <header>
+                    <h3>Hyperspace Travel</h3>
+                </header>
+                <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+            </section>
 
         </div>
-   </section>
+        <div class="col-6 col-12-narrower">
+
+            <section>
+                <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+                <header>
+                    <h3>And Another Train</h3>
+                </header>
+                <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+            </section>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-4">
+                        <div class="d-flex justify-content-center">
+                            <a href="https://github.com/Jennygit03" class="social-icon" target="_blank"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/jennifer-nguyen-1b7a19201/" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:jennifertn@outlook.com" class="social-icon"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</footer>
 
    
-   
-   <!-- About Section -->
-   <section class="py-5" id="about">
-       <div class="container">
-           <h2 class="text-center mb-5">About Me</h2>
-           <div class="row justify-content-center">
-               <div class="col-lg-8">
-                   <p class="lead ">
-                       Hi there! <span style='font-size:auto;'>&#128075;</span><br>
-                  
-                       I am a junior student at Middle Tennessee State University. Capable of programming in various languages, 
-                       including C++, HTML, and CSS, with practical experience in front-end development gained through academic projects 
-                       and personal endeavors. Eager to leverage technical skills and continuous learning to contribute to dynamic development teams and drive impactful projects.
-                   </p>
-               </div>
-           </div>
-       </div>
-   </section>
-   
-   <!-- Tech Skills Section -->
-   <section class="py-5" id="skills">
-       <div class="container">
-           <h2 class="text-center mb-5">Technical Skills</h2>
-           <div class="row g-4">
-               <div class="col-md-6 col-lg-4">
-                   <div class="card h-100 border-0 shadow-sm skill-card">
-                       <div class="card-body">
-                           <div class="text-center mb-3">
-                               <i class="bi bi-code-slash text-primary" style="font-size: 2rem;"></i>
-                           </div>
-                           <h5 class="card-title text-center">Languages</h5>
-                           <p class="card-text text-center">C++, HTML/CSS, Bootstrap</p>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                   <div class="card h-100 border-0 shadow-sm skill-card">
-                       <div class="card-body">
-                           <div class="text-center mb-3">
-                               <i class="bi bi-tools text-primary" style="font-size: 2rem;"></i>
-                           </div>
-                           <h5 class="card-title text-center">Tools & Platforms</h5>
-                           <p class="card-text text-center">GitHub, JupyterHub</p>
-                       </div>
-                   </div>
-               </div>
-               
-           </div>
-       </div>
-   </section>
-   
-   <!-- Projects Section -->
-   <section class="py-5" id="projects">
-       <div class="container">
-           <h2 class="text-center mb-5">Featured Projects</h2>
-           <div class="row g-4">
-               <div class="col-md-6 col-lg-4">
-                   <div class="card border-0 shadow-sm project-card">
-                       <img src="images/ecommerce.jpg" class="card-img-top" alt="E-Commerce Platform">
-                       <div class="card-body">
-                           <h5 class="card-title">Tic-Tac_toe</h5>
-                           <p class="card-text">....</p>
-                           <div class="d-flex gap-2">
-                               <a href="#" class="btn btn-primary">View Project</a>
-                               <a href="#" class="btn btn-outline-secondary">GitHub</a>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                   <div class="card border-0 shadow-sm project-card">
-                       <img src="" class="card-img-top" alt="Task Management App">
-                       <div class="card-body">
-                           <h5 class="card-title">Task Management</h5>
-                           <p class="card-text">...</p>
-                           <div class="d-flex gap-2">
-                               <a href="#" class="btn btn-primary">View Project</a>
-                               <a href="#" class="btn btn-outline-secondary">GitHub</a>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-   </section>
-   
-   <!-- Contact Section -->
-   <section class="py-5" id="contact">
-       <div class="container">
-           <h2 class="text-center mb-5">Contact Me</h2>
-           <div class="row justify-content-center">
-               <div class="col-lg-6">
-                   <div class="text-center mb-4">
-                       <div class="d-flex justify-content-center">
-                           <a href="https://github.com/Jennygit03" class="social-icon" target="_blank"><i class="bi bi-github"></i></a>
-                           <a href="https://www.linkedin.com/in/jennifer-nguyen-1b7a19201/" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
-                           <a href="mailto:jennifertn@outlook.com" class="social-icon"><i class="bi bi-envelope"></i></a>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-      <script src="script.js"></script>
-  
-      <script>
-          window.addEventListener('scroll', function() {
-              if (window.scrollY > 50) {
-                  document.querySelector('.navbar').classList.add('scrolled');
-              } else {
-                  document.querySelector('.navbar').classList.remove('scrolled');
-              }
-          });
-  
-         </script>
-  </body>
-  </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    document.querySelector('.navbar').classList.add('scrolled');
+                } else {
+                    document.querySelector('.navbar').classList.remove('scrolled');
+                }
+            });
+    
+           </script>
+    </body>
+    </html>
