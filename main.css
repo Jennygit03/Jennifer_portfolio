@@ -147,7 +147,10 @@ header {
     background-position: center;
 }
 
-
+html {
+    scroll-padding-top: 80px; /* height of your navbar */
+  }
+  
 
 /* Hero Section Styles */
 .hero-section {
