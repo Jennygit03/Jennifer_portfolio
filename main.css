@@ -135,9 +135,6 @@ body.dark-mode {
     transition: background-color 0.3s;
 }
 
-
-
-
 header {
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/api/placeholder/1200/400');
     color: white;
